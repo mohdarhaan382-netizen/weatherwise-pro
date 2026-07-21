@@ -4,7 +4,7 @@
 
 
 // API KEY
-const API_KEY = "50dc14ade248d940bb05b6a006fa5097";
+const API_KEY = "50dc14ade1448d940bb05b6a006fa0000";
 
 
 // Elements
