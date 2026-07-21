@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WeatherWise Pro | Smart Weather Forecast</title>
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="style.css">
+
+
+<!-- Icons -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<!-- Google Font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+<!-- Chart Library -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<!-- Navigation -->
+
+<nav>
+
+
+<div class="logo">
+
+🌦️ WeatherWise Pro
+
+</div>
+
+
+<div class="nav-buttons">
+
+
+<button id="locationBtn">
+
+<i class="fa-solid fa-location-dot"></i>
+
+My Location
+
+</button>
+
+
+<button id="themeBtn">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+<!-- Hero Section -->
+
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+
+Smart Weather Forecast
+
+</h1>
+
+
+<p>
+
+Get real-time weather updates,
+air quality and future predictions.
+
+</p>
+
+
+
+<div class="search">
+
+
+<input 
+id="cityInput"
+type="text"
+placeholder="Search city...">
+
+
+<button id="searchBtn">
+
+<i class="fa-solid fa-search"></i>
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- Main Dashboard -->
+
+
+<section class="dashboard">
+
+
+
+<!-- Current Weather -->
+
+
+<div class="current-weather card">
+
+
+<h2 id="city">
+
+London
+
+</h2>
+
+
+<div class="weather-main">
+
+
+<img 
+id="weatherIcon"
+src="">
+
+
+<div>
+
+
+<h1 id="temp">
+
+--°C
+
+</h1>
+
+
+<p id="description">
+
+Loading...
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="stats">
+
+
+<div>
+
+<i class="fa-solid fa-droplet"></i>
+
+<p>Humidity</p>
+
+<h3 id="humidity">
+
+--%
+
+</h3>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-wind"></i>
+
+<p>Wind</p>
+
+<h3 id="wind">
+
+-- km/h
+
+</h3>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-gauge"></i>
+
+<p>Pressure</p>
+
+<h3 id="pressure">
+
+-- hPa
+
+</h3>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- AQI -->
+
+
+<div class="aqi card">
+
+
+<h2>
+
+Air Quality Index
+
+</h2>
+
+
+<div class="aqi-circle">
+
+Good
+
+</div>
+
+
+<p>
+
+PM2.5:
+<span>
+
+12
+
+</span>
+
+</p>
+
+
+<p>
+
+PM10:
+<span>
+
+25
+
+</span>
+
+</p>
+
+
+</div>
+
+
+
+
+
+<!-- Forecast -->
+
+
+<div class="forecast card">
+
+
+<h2>
+
+7 Day Forecast
+
+</h2>
+
+
+<div id="forecastContainer">
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Chart -->
+
+
+<div class="chart card">
+
+
+<h2>
+
+Temperature Trend
+
+</h2>
+
+
+<canvas id="tempChart">
+
+</canvas>
+
+
+</div>
+
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+
+© 2026 WeatherWise Pro | Built with HTML CSS JavaScript
+
+</p>
+
+</footer>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
